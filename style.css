@@ -1,0 +1,184 @@
+*{                        /*overall effect by this*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.navbar{                    /*the nav elements*/
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+nav{                          /*puttung to extreme right*/
+	flex: 1;
+	text-align: right;
+}
+
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+
+nav li{
+	display: inline-block;
+	margin-right: 20px;           /*it puts spaces to the right*/
+}
+
+a{
+	text-decoration: none;  /*removes underlines*/        
+	color: #555;               /*grey color*/
+}
+
+p{
+	color: #555;
+     margin: auto;
+     padding-left: 10px;
+}
+
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.row{
+	display: flex;        /*row elem filled (basic one line beautification)*/
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.col-2{
+     flex-basis: 50%;
+     min-width: 300px;
+     margin: auto;
+     padding-right: 35px;
+}
+
+.col-2 img{
+     max-width: 100%;
+     padding: 50px 0;
+}
+
+.col-2 h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;       /*0 for "from the left"*/
+	margin: auto;
+	padding-left: 15px;
+}
+
+.button{
+	display: inline-block;
+	background: #ff523b;
+	color: #fff;
+	padding: 10px 30px;
+	margin: 10px 0;
+	border-radius: 30px;      /*how much curved edges of button will be*/
+    transition: background 0.5;
+}
+
+.button:hover{
+     background: #563434;oo
+}
+
+.header{
+	background: radial-gradient(#fff,#ffd6d6);
+	padding: 10px;  /*image is large enough to see padding effect like we saw in EXCLUSIVE OFFER image*/
+}
+
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.categories{
+	margin: 70px 0;
+}
+
+.col-3{
+	flex-basis: 30%;  /*3 col ban jaayega isse*/
+	min-width: 250px;   /*helped to bring all 3 images to one line*/
+	margin-bottom: 30px;  /*bottom mein space control ho raha*/
+}
+
+.col-3 img{
+	width: 100%;
+}
+
+.small-container{
+	max-width: 1080px;
+	margin: auto;    /*auto postions whole thing probably to centre*/
+     padding-left: 25px;   /**weaker than margin acivity but almost same*/
+     padding-right: 25px;
+}
+
+.col-4{
+	flex-basis: 20%; /*5 col ban jaayega isse , lekin 4 adjust kar rahe*/
+	padding: 0px;   /*helped spacing between products*/
+	min-width: 40px;
+	min-height: 20px;
+	margin-bottom: 100px;
+	margin-left: 30px;
+	margin-right: 10px;
+	transition: transform 0.5s; /*time for 3d transition (slow or fast)*/
+}
+
+.col-4 img{
+	width: 100%;   /*ye image resize kar dega*/
+
+}
+
+.title{
+	text-align: center;
+	margin: 0 auto 80px;  /*got 80px space from bottom here (clear only)*/
+     position: relative;
+     line-height: 60px;
+     color: #555;
+}
+
+.title::after{
+	content: '';     /*a line gets created , here we can add text aswell*/
+	background: #ff523b;
+	width: 100px;     /*these are dimn of line*/
+	height: 8px;
+	border-radius: 5px;   
+	position: absolute;    /*till here that orange line gets created*/
+	bottom: 0;    /*brings line down*/
+	left:  47%;   /*creates suitable spaces on left*/
+}
+
+h4{
+	color: #555;
+	font-weight: normal;
+}
+
+.col-4 p{
+	font-size: 14px;    /*price was her in p*/
+
+}
+
+.rating .fa{
+	color: #ff523b;
+}
+
+.col-4:hover{
+	transform: translateY(8px);
+}
+/*.........................OFFER...................................*/
+.offer{
+	background: radial-gradient(#fff,#ffd6d6);
+	margin-top: 80px;
+	padding: 30px 0;
+
+}
+
+small{
+	color: #555;ppp
+}
+
+.col-2 .offer-img{
+	padding: 50px;
+	margin-bottom: 100px;
+}
